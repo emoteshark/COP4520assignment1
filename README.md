@@ -8,3 +8,5 @@ The primes.txt file containing the output should be created in the same director
 THE TIME OUTPUT IS IN SECONDS. For example, if the first number in primes.txt is "8", that means it took 8 seconds to run.
 <execution time> <total number of primes found> <sum of all primes found> <top ten maximum primes, listed in order from lowest to highest>
 
+I have done prime number tests before, by simply iterating through every number and testing it for primes, but that would be incredibly slow with this high a range even with multiple threads. So I researched better prime tests and found this page: https://en.wikipedia.org/wiki/Primality_test, which helped me come up with my final 6k+-1 brute force approach. I also tried a seive algorithm initially but ultimately abandoned it because of code complexity; a seive may be faster, but my approach still finishes in a reasonable time. On my hardware my final approach takes 7-8 seconds to complete. I believe my final prime tally and total sum is correct because my result matched my peers' results. 
+
